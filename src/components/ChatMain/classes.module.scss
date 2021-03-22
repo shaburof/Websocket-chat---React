@@ -1,0 +1,139 @@
+$borderColor:gray;
+$inputHeight:35px;
+// $font:'Courier New',Courier,monospace;
+$font:'Arial Narrow';
+$fontSize:16px;
+
+.chatMain {
+    // background-color: rgba(255, 99, 71, 0.212);
+    width: 554px;
+    height: 300px;
+}
+
+.chatArea {
+    height: calc(100% - #{$inputHeight});
+
+    .chatArea__textarea {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+
+        display: block;
+        padding: 5px;
+        resize: none;
+        outline: none;
+        border: 1px solid $borderColor;
+        border-radius: 3px;
+        background-color: transparent;
+        font-size: $fontSize;
+    }
+
+    .chatArea__textarea:focus {
+        outline: none;
+    }
+
+    .chatArea__textarea::-webkit-scrollbar {
+        width: 15px;
+        background-color: rgba(0, 0, 0, 0.082);
+        cursor: pointer;
+    }
+
+
+    .chatArea__textarea::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.144);
+        cursor: pointer;
+    }
+
+    .messages {
+        list-style-type: none;
+        margin: unset;
+        padding: unset;
+        font-family: $font;
+        color: rgb(91, 50, 156);
+
+
+    }
+
+    // .message {
+    //     display: flex;
+    //     align-items: baseline;
+
+    //     .messageName {
+    //         font-weight: bold;
+    //         margin-right: 5px;
+    //     }
+
+    //     .messageTime {
+    //         margin-right: 5px;
+    //         font-size: 14px;
+    //         color: black;
+    //         font-style: italic;
+    //     }
+
+    //     .messageText {}
+    // }
+}
+
+.inputArea {
+    height: $inputHeight;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+
+    .inputArea__input {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid $borderColor;
+        border-radius: 3px;
+        background-color: transparent;
+        padding: 5px;
+        font-family: $font;
+        font-size: $fontSize;
+    }
+
+    .inputArea__input:focus {
+        outline: none;
+
+    }
+
+    .inputArea__helpMessage {
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        bottom: -11px;
+        right: 3px;
+
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.5);
+
+        span {
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    .helpMessageEmoji {
+        bottom: -22px;
+        right: 84px;
+    }
+}
+
+
+
+
+.emojiSection {
+    display: inline-block;
+    padding: 3px;
+    margin-top: 7px;
+    border-radius: 3px;
+    border: 1px solid $borderColor;
+
+    .smileIcon {
+        cursor: pointer;
+        width: 30px;
+        margin: 3px;
+    }
+}

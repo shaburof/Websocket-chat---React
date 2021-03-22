@@ -1,0 +1,18 @@
+.message {
+    display: flex;
+    align-items: baseline;
+
+    .messageName {
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    .messageTime {
+        margin-right: 5px;
+        font-size: 14px;
+        color: black;
+        font-style: italic;
+    }
+
+    .messageText {}
+}

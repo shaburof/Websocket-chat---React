@@ -1,0 +1,19 @@
+body {
+    /* background-color: #d2caae;
+    font-family: "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif; */
+}
+
+#root {
+    position: absolute;
+    bottom: 18%;
+    left: 10px;
+}
+
+@media (max-width: 1000px) {
+    #root {
+        display: none;
+    }
+}
